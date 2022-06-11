@@ -7,6 +7,7 @@
 --primary-text-color: #212121;
 --title-text-color: #757575;
 --accent-color: #2196F3;
+--button-hover-color: #188CE8;
 --primary-background-color: #ffffff;
 --hero-footer-background-color: #2F303A;
 --footer-contacts-color: rgba(255, 255, 255, 0.6);
@@ -38,6 +39,10 @@ body {
 .accent {
     color: var(--accent-color);
 }
+.accent:hover,
+.accent:focus {
+color: var(--primary-text-color);
+}
 .logo:hover,
 .logo:focus {
 color: #2196F3;
@@ -52,6 +57,9 @@ color: #2196F3;
 }
 .link:hover,
 .link:focus {
+    color: var(--accent-color);
+}
+.current {
     color: var(--accent-color);
 }
 
@@ -94,8 +102,10 @@ button {
     cursor: pointer;
     border-radius: 4px;
 }
-.hero-button:focus {
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.hero-button:focus,
+.hero-button:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features */
@@ -168,24 +178,36 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .logo-footer:focus {
     color: #2196F3;
 }
-address {
-    font-style: normal;
+.accent-footer:hover,
+.accent-footer:focus {
+    color: var(--primary-background-color);
+}
+.address1 {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    color: var(--primary-background-color);
 }
-address:focus,
-address:hover {
+
+.address1:focus,
+.address1:hover {
     color: var(--accent-color);
 }
-address > a {
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.address {
     font-style: normal;
     color: var(--footer-contacts-color);
 }
-address > a:focus,
-address > a:hover {
+.address:focus,
+.address:hover {
     color: var(--accent-color);
 }
+
 
 /* Portfolio */
 
