@@ -11,7 +11,8 @@
 --primary-background-color: #ffffff;
 --hero-footer-background-color: #2F303A;
 --footer-contacts-color: rgba(255, 255, 255, 0.6);
---button-bgc-color: #F5F4FA
+--button-bgc-color: #F5F4FA;
+--secondary-bgc: #F5F4FA
 }
 
 body {
@@ -110,7 +111,14 @@ button {
 
 /* Features */
 .features-header {
-    opacity: 0;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
 }
 .features-title {
     font-weight: 700;
@@ -143,6 +151,9 @@ button {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+}
+.team {
+    background-color: var(--secondary-bgc);
 }
 .team-members {
     font-weight: 500;
